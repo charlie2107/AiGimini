@@ -13,7 +13,7 @@ app.get('/getData', (req, res) => {
 
 app.post('/getResponse', async (req, res) => {
     try {
-        const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY); 
+        const genAI = new GoogleGenerativeAI("AIzaSyCGsN9Iz0ngl9c35Z1nhfTH7uma4XL0c08"); 
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const prompt = req.body.question;
